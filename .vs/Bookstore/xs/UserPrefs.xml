@@ -1,24 +1,27 @@
 ﻿<Properties StartupConfiguration="{5446E8F9-8CC4-490A-BEFD-9700712A96F9}|Default">
   <MonoDevelop.Ide.ItemProperties.Bookstore PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Bookstore/Views/Shared/Components/Types/Default.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bookstore/Infrastructure/PaginationTagHelper.cs">
     <Files>
       <File FileName="Bookstore/Program.cs" Line="16" Column="1" />
       <File FileName="Bookstore/appsettings.Development.json" />
-      <File FileName="Bookstore/Properties/launchSettings.json" Line="21" Column="70" />
-      <File FileName="Bookstore/Views/Shared/Components/Types/Default.cshtml" Line="1" Column="1" />
+      <File FileName="Bookstore/Properties/launchSettings.json" />
+      <File FileName="Bookstore/Views/Shared/Components/Types/Default.cshtml" Line="12" Column="6" />
+      <File FileName="Bookstore/Views/Home/Index.cshtml" />
+      <File FileName="Bookstore/Infrastructure/PaginationTagHelper.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Bookstore" expanded="True">
             <Node name="Bookstore" expanded="True">
-              <Node name="Properties" expanded="True" />
+              <Node name="Infrastructure" expanded="True">
+                <Node name="PaginationTagHelper.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True">
                   <Node name="Components" expanded="True">
-                    <Node name="Types" expanded="True">
-                      <Node name="Default.cshtml" selected="True" />
-                    </Node>
+                    <Node name="Types" expanded="True" />
                   </Node>
                 </Node>
               </Node>

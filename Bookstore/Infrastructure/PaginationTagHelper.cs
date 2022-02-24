@@ -63,10 +63,10 @@ namespace Bookstore.Infrastructure
                 //stuff for the class and different IF statements!
                 if (PageClassEnabled)
                 {
-                    tb.AddCssClass(PageAction);
+                    tb.AddCssClass(PageClass);
                     tb.AddCssClass(i == PageStuff.CurrentPage ? PageClassSelected : PageClassNormal);
                 }
-                tb.AddCssClass(PageAction);
+                tb.AddCssClass(PageClass);
                 tb.InnerHtml.Append(i.ToString());
 
                 final.InnerHtml.AppendHtml(tb);
