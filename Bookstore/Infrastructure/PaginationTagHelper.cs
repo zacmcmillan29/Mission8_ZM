@@ -37,6 +37,15 @@ namespace Bookstore.Infrastructure
         //being received as home page!
         public string PageAction { get; set; }
 
+        //for the class stuff
+        public string PageClass { get; set; }
+
+        //for the page stuff!
+        //FURTHER ATTRIBUTES FOR THE BUTTONS
+        public bool PageClassEnabled { get; set; }
+        public string PageClassNormal { get; set; }
+        public string PageClassSelected { get; set; }
+
 
         //override a default method/parent class
         //this is going to end up building dynamically the tags that link to the next pages!
@@ -51,6 +60,13 @@ namespace Bookstore.Infrastructure
                 TagBuilder tb = new TagBuilder("a"); //for each individual link
 
                 tb.Attributes["href"] = uh.Action(PageAction, new { pageNum = i }); //this
+                //stuff for the class and different IF statements!
+                if (PageClassEnabled)
+                {
+                    tb.AddCssClass(PageAction);
+                    tb.AddCssClass(i == PageStuff.CurrentPage ? PageClassSelected : PageClassNormal);
+                }
+                tb.AddCssClass(PageAction);
                 tb.InnerHtml.Append(i.ToString());
 
                 final.InnerHtml.AppendHtml(tb);

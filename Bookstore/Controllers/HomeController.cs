@@ -23,27 +23,31 @@ namespace Bookstore.Controllers
         }
 
         // GET: /<controller>/
-        public IActionResult Index(int pageNum = 1) //sets the default if nothing else comes in to be on page 1
+        public IActionResult Index(string category, int pageNum = 1) //sets the default if nothing else comes in to be on page 1
         {
             int pageSize = 10;
 
             var x = new BooksViewModel
             {
                 Books = repo.Books
+                .Where (b => b.Category == category || category ==null)
                 .OrderBy(b => b.Title)
                 .Skip((pageNum - 1) * pageSize)   //-1 helps display the right results... think about why 
                 .Take(pageSize),
 
                 PageInformation = new PageInfo
                 {
-                    TotalNumBooks = repo.Books.Count(),
+                    TotalNumBooks =
+                    (category == null
+                    ? repo.Books.Count()
+                    : repo.Books.Where ( x => x.Category == category).Count()),
                     BooksPerPage = pageSize,
                     CurrentPage = pageNum
-                    //TotalNumPages = repo.Projects
+                    //TotalNumPages = repo.Books
                 }
             };
 
-            //var blah = context.Projects.ToList();
+            //var blah = context.Books.ToList();
             //var blah = 
 
             return View(x);
