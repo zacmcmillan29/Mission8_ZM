@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{5446E8F9-8CC4-490A-BEFD-9700712A96F9}|Default">
   <MonoDevelop.Ide.ItemProperties.Bookstore PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Bookstore/Infrastructure/UrlExtensions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bookstore/Pages/_BuyLayout.cshtml">
     <Files>
       <File FileName="Bookstore/Program.cs" Line="16" Column="1" />
       <File FileName="Bookstore/appsettings.Development.json" />
@@ -8,15 +8,21 @@
       <File FileName="Bookstore/Views/Shared/Components/Types/Default.cshtml" Line="12" Column="6" />
       <File FileName="Bookstore/Views/Home/Index.cshtml" Line="1" Column="1" />
       <File FileName="Bookstore/Infrastructure/PaginationTagHelper.cs" Line="69" Column="41" />
-      <File FileName="Bookstore/Infrastructure/UrlExtensions.cs" Line="10" Column="2" />
+      <File FileName="Bookstore/Infrastructure/UrlExtensions.cs" Line="10" Column="109" />
+      <File FileName="Bookstore/Pages/Buy.cshtml" Line="45" Column="73" />
+      <File FileName="Bookstore/Pages/_ViewStart.cshtml" Line="1" Column="1" />
+      <File FileName="Bookstore/Pages/_ViewImports.cshtml" Line="1" Column="1" />
+      <File FileName="Bookstore/Pages/_BuyLayout.cshtml" Line="13" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Bookstore" expanded="True">
             <Node name="Bookstore" expanded="True">
-              <Node name="Infrastructure" expanded="True">
-                <Node name="UrlExtensions.cs" selected="True" />
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="_BuyLayout.cshtml" selected="True" />
+                <Node name="Buy.cshtml" expanded="True" />
               </Node>
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True" />
